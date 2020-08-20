@@ -1,0 +1,42 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    background: url(/assets/images/login_bg.jpg) no-repeat 0 0 / cover;
+    /* 去除滚动条 */
+    overflow: hidden;
+}
+
+#logo {
+    margin: 20px 0 0 140px;
+}
+
+.box {
+    width: 400px;
+    height: 310px;
+    background-color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.title {
+    height: 60px;
+    background: url(/assets/images/login_title.png) no-repeat center;
+}
+
+.layui-form {
+    margin: 0 30px;
+}
+
+.goto {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* 先隐藏注册的盒子 */
+.register {
+    display: none;
+}

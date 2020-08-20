@@ -5,10 +5,89 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>登录页面</title>
+    <!-- 
+        路径最开头的 / ，表示http://127.0.0.1:5500/ ，可以理解为项目根目录，即big-event
+        前提条件，使用live server打开页面
+     -->
+    <link rel="stylesheet" href="/assets/lib/layui/css/layui.css">
+    <link rel="stylesheet" href="/assets/css/login.css">
 </head>
 
 <body>
+    <!-- logo区 -->
+    <div id="logo">
+        <img src="assets/images/logo.png" alt="">
+    </div>
+    <!-- 登录和注册盒子 -->
 
+    <!-- 登录的盒子 start -->
+    <div class="box login">
+        <!-- 盒子的标题 -->
+        <div class="title"></div>
+        <!-- 登录的表单start -->
+        <form class="layui-form" action="">
+            <!-- 用户名 -->
+            <div class="layui-form-item">
+                <input type="text" name="title" required lay-verify="required" placeholder="请输入用户名" autocomplete="off"
+                    class="layui-input">
+            </div>
+            <!-- 密码 -->
+            <div class="layui-form-item">
+                <input type="password" name="title" required lay-verify="required" placeholder="请输入密码"
+                    autocomplete="off" class="layui-input">
+            </div>
+            <!-- 按钮 -->
+            <div class="layui-form-item">
+                <button class="layui-btn layui-bg-blue layui-btn-fluid" lay-submit lay-filter="formDemo">登录</button>
+            </div>
+            <!-- 超链接 -->
+            <div class="layui-form-item goto">
+                <a href="#">去注册账号</a>
+            </div>
+        </form>
+        <!-- 登录的表单end -->
+    </div>
+
+    <!-- 登录的盒子 end -->
+
+
+    <!-- 注册的盒子 start -->
+    <div class="box register">
+        <!-- 盒子的标题 -->
+        <div class="title"></div>
+        <!-- 登录的表单start -->
+        <form class="layui-form" action="">
+            <!-- 用户名 -->
+            <div class="layui-form-item">
+                <input type="text" name="title" required lay-verify="required" placeholder="请输入用户名" autocomplete="off"
+                    class="layui-input">
+            </div>
+            <!-- 密码 -->
+            <div class="layui-form-item">
+                <input type="password" name="title" required lay-verify="required" placeholder="请输入密码"
+                    autocomplete="off" class="layui-input">
+            </div>
+            <!-- 重复密码 -->
+            <div class="layui-form-item">
+                <input type="password" name="title" required lay-verify="required" placeholder="请输入密码"
+                    autocomplete="off" class="layui-input">
+            </div>
+            <!-- 按钮 -->
+            <div class="layui-form-item">
+                <button class="layui-btn layui-bg-blue layui-btn-fluid" lay-submit lay-filter="formDemo">登录</button>
+            </div>
+            <!-- 超链接 -->
+            <div class="layui-form-item goto">
+                <a href="#">已有账号，去登陆</a>
+            </div>
+        </form>
+        <!-- 登录的表单end -->
+    </div>
+    <!-- 注册的盒子 end -->
+
+
+    <script src="/assets/lib/jquery.js"></script>
+    <script src="/assets/js/login.js"></script>
 </body>
 
 </html>
