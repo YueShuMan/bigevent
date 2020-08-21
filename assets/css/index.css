@@ -1,0 +1,35 @@
+/* 字体图标 */
+.iconfont::before {
+    padding-right: 8px;
+}
+
+/* 子菜单图标 */
+.icon-pinglun::before {
+    padding-left: 12px;
+    padding-right: 8px;
+}
+
+/* 侧边栏头像div */
+div.userinfo {
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+}
+
+/* 字体头像 */
+.text-avatar { 
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    line-height: 32px;
+    font-size: 24px;
+    color: #fff;
+    background-color: #419488;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+/* 默认隐藏两个头像 */
+.text-avatar, .layui-nav-img {
+    display: none;
+}
