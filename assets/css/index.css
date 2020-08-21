@@ -33,3 +33,16 @@ div.userinfo {
 .text-avatar, .layui-nav-img {
     display: none;
 }
+
+
+/* 内容区 */
+
+/* 找到iframe的父级div。设置overflow:hidden */
+.layui-body {
+    overflow: hidden;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+}

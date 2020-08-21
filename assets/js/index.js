@@ -3,7 +3,8 @@
 function getUserInfo() {
     // 发送ajax请求，获取用户信息 (必须先登录、保证本地存储有可用token)
     $.ajax({
-        url: 'http://ajax.frontend.itheima.net/my/userinfo',
+        url: '/my/userinfo',
+        // ajax请求成功后触发
         success: function (res) {
             console.log(res);
             if (res.status == 0) {
@@ -23,9 +24,6 @@ function getUserInfo() {
                     $('.text-avatar').text(first).css('display', 'inline-block');
                 }
             }
-        },
-        headers: {
-            Authorization: localStorage.getItem('token')
         }
     });
 }
@@ -49,4 +47,9 @@ $('#logout').click(function () {
 
         layer.close(index);
     })
-})
+});
+
+
+
+
+// --------------------------------- 退出功能 -------------------------------------
