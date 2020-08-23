@@ -1,0 +1,9 @@
+# 井号注释
+
+# git的忽略文件
+
+# 设置 node_modules文件夹为忽略文件
+node_modules
+
+# 设置package-lock.json为忽略文件
+package-lock.json
